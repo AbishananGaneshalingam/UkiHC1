@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <style>
+      
+        .formStyle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fieldSetStyle {
+            display: flex;
+            flex-direction: column;
+            width: 35rem;
+            padding: 1rem;
+            background-color: aqua;
+            justify-content: center;
+            align-items: center;
+        }
+        .cemter {
+            width: 25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .emptySpace {
+            width: 4rem;
+        }
+        .firstNameField {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .lastNameField {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .regNoField {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .dateOfBirthField {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            clear: left;
+        }
+        .radioSelect {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 80%;
+
+        }
+        .radioArea {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;     
+        }
+        .favouriteSelect {
+            display: flex;
+            flex-direction: column;
+          
+        }
+        .checkboxSelect {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around; 
+            width: 100%;
+        }
+      
+        input {
+            height: 2rem;
+        }
+        label .labelDown {
+            padding: 4rem;
+        }
+        .buttonArea {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .btnStyle {
+            width: 8rem;
+        }
+        .urlBtnStyle {
+            position: static;
+            padding: 0.5rem;
+            color: black;
+            font-weight: 600;
+            background-color: aqua;
+            z-index: 500;
+        }
+
+
+
+    </style>
+</head>
+
+<body style="align-content: center;">
+    <h4><u>UKI-STUDENT</u></h4>
+    <button class="urlBtnStyle"><a href="./index.html">Home</a></button>
+    <form class="formStyle">
+        <fieldset class="fieldSetStyle">
+            <legend>UKI.LIFE</legend>
+            <div class="cemter">
+                <div class="firstNameField">
+                    <label for="name">FIRST NAME</label>
+                    <input type="text" name="FIRST NAME" placeholder="type here">
+                </div>
+                <br>
+                <div class="lastNameField">
+                    <label for="name">LAST NAME</label>
+                    <input type="text" name="LAST NAME" placeholder="type here">
+                </div>
+                <br>
+                <div class="regNoField">
+                    <label for="REG.NO">REG.NO </label>
+                    <input type="number" name="REG.NO" placeholder="type here">
+                </div>
+                <br>
+                <div class="dateOfBirthField">
+                    <label for="date of birth">DATE OF BIRTH</label>
+                    <input type="text" name="DATE OF BIRTH" placeholder="type here"> 
+                </div>
+            </div>
+            <br>
+            <div class="radioSelect">
+                <label for="gender">Gender</label>
+                <div class="radioArea">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" checked>Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <br/>
+            <div class="favouriteSelect">
+                <label for="FavSub">Fav. Subject:</label> 
+                <br/>
+                <div class="checkboxSelect">
+                    <input type="checkbox" id="prg" name="prg" value="prg">
+                    <label style="margin-top: 0.5rem;" for="favsbub1"> Programming</label>
+                    <input type="checkbox" id="Bu" name="bu" value="bus">
+                    <label style="margin-top: 0.5rem;" for="favsbub2"> Business</label>
+                    <input type="checkbox" id="pc" name="pc" value="pc">
+                    <label style="margin-top: 0.5rem;" for="favsbub3"> Personal coaching</label>
+                    <input type="checkbox" id="eng" name="eng" value="eng">
+                    <label style="margin-top: 0.5rem;" for="favsbub4"> English</label>
+                </div>
+            </div>
+
+            <p><b>Feedback</b></p>
+            <textarea name="Feedback" rows="10" cols="50">
+                     </textarea>
+            <br>
+            <div class="buttonArea">
+                <input class="btnStyle" type="submit" value="Submit">
+                <input class="btnStyle" type="reset" value="Reset">
+            </div>
+           
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>

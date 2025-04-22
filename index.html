@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<title>Uki exam</title>
+<style type="text/css">
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     
+        align-items: center;
+    }
+    .alignCenter {
+        text-align: center;
+    }
+    .alignLeft {
+        text-align: left;
+    }
+    .mainImage {
+        align-self: center;
+    }
+    .mainBody {
+        background-color: rgb(40, 218, 241);
+        border-radius: 10px;
+        padding: 10px;
+        width: 600px;
+        height: 250px;
+        align-items: center;
+    }
+    .doubleSideWrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .leftContentWrap {
+        border-style:solid;
+        border-radius: 10px;
+        background-color: rgb(121, 103, 93);
+        width: 22rem;
+        height: 15rem;
+        padding: 1rem;
+    }
+    .rightContentWrap {
+        border-style: solid;
+        border-radius: 10px;
+        background-color: rgb(121, 103, 93);
+        width: 22rem;
+        height: 15rem;
+        padding: 1rem;
+    }
+    .footerStyle {
+        background-color: lightblue;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    a {
+        background-color: blueviolet;
+        height: 1rem;
+        width: 1rem;
+        color: white;
+        padding: 1rem;
+        align-items: center;
+    
+
+    }
+    
+
+</style>
+</head>
+
+
+<body class="container">
+    <br><br>
+    <div class="alignCenter">
+        <a href="./index.html">Home</a>
+        <a href="./cssform.html">Form</a>
+        <a href="./CSSTABLE.html">Time Table</a>
+    </div>
+    <br><br>
+    <div class="mainImage">
+    <img src="data:image/png;base64,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" alt="UKI">
+    </div>
+    <br><br>
+    <div class="mainBody">
+        <h3>Welcome to Uki-Stepping stone to tech life</h3>
+        <p >It is a full scholarship based Accelerator program for Coding in Jaffna Sri Lanka targeting student who has completed Advanced Level examinations and don't have access to university education or any other form of
+        vocational education. It is aimed to provide the necessary training to enter Computer Software industry or to start an IT startup This is a joint initiative by YARL IT Hub and SERVE Foundation Yarl IT Hub has been functioning for the last five years as a not for profit social enterprise focusing
+        on technology entrepreneurship in northern Sri Lanka ans SERVE Foundation is a four year old Foundation focusing on
+        using tecjnology to uplift secondary education standards in rural school in nothern Sri Lanka.
+        </p>
+    </div>
+    <!-- trust-->
+    <br><br>
+    <div class="doubleSideWrap">
+        <div class="leftContentWrap">
+            <h3 class="alignLeft">COURSE</h3>
+            <p>
+                Our vision is to be a leading center of experience in teaching,learning,research and scholarship
+            </p>
+            <ul>
+                <li>Programming Course</li>
+                <li>Business Skills</li>
+                <li>English Skills</li>
+                <li>Personal Coaching and Mentoring</li>
+            </ul>
+       
+        </div>
+        <div class="rightContentWrap">
+            <h3 style="text-align: center;">CODING ACCELERATOR PROGRAM</h3>
+            <p style="text-align: justify;"> The Coding Accelerator program is an intensive training on full stuck development with server side node.js and modem clinet side front end libraries and framework throughout this intensive course the student will study professional software development techniques and practices as he/she advance his/her skills on java script</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="footerStyle">
+        <p>2020@Uki All Rights Reserved. A joint initiative by Yarl IT Hub and SERVE Foundation</p>
+    </div>
+    
+</body>
+</html>
+
